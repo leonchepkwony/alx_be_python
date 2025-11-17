@@ -10,10 +10,9 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
 
     elif operation == 'divide':
-        try:
-            return num1 / num2
-        except ZeroDivisionError:
+        if num2 == 0:
             return "DIVIDE_BY_ZERO"
+        return num1 / num2
 
     else:
         return "INVALID_OPERATION"
