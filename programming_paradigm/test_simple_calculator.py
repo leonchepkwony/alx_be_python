@@ -11,14 +11,14 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up the SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         """tests add function"""
         self.assertEqual(self.calc.add(4, 6), 10)
         self.assertEqual(self.calc.add(-6, -2), -8)
         with self.assertRaises(TypeError):
             self.calc.add('hi', 5)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         """tests subtract function"""
         self.assertEqual(self.calc.subtract(10, 4), 6)
         self.assertEqual(self.calc.subtract(-8, -4), -4)
