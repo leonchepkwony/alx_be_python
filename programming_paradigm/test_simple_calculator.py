@@ -25,13 +25,13 @@ class TestSimpleCalculator(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.calc.subtract('5', 5)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """tests multiply function"""
         self.assertEqual(self.calc.multiply(4, 6), 24)
         self.assertEqual(self.calc.multiply(-6, -2), 12)
        
 
-    def test_divide(self):
+    def test_division(self):
         """tests divide function"""
         self.assertEqual(self.calc.divide(10, 4), 2.5)
         self.assertEqual(self.calc.divide(-8, -4), 2)
