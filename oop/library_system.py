@@ -10,6 +10,7 @@ class Book:
 
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
+    
 
 
 # Derived class: EBook
@@ -19,7 +20,8 @@ class EBook(Book):
         self.file_size = file_size        # Unique attribute
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author}, File size: {self.file_size}KB"
+        
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
 
 
 # Derived class: PrintBook
