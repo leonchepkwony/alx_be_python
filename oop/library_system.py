@@ -19,7 +19,7 @@ class EBook(Book):
         self.file_size = file_size        # Unique attribute
 
     def __str__(self):
-        return f"EBook: {self.title} by {self.author} - File size: {self.file_size}KB"
+        return f"EBook: {self.title} by {self.author}, File size: {self.file_size}KB"
 
 
 # Derived class: PrintBook
@@ -29,7 +29,7 @@ class PrintBook(Book):
         self.page_count = page_count      # Unique attribute
 
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author} - Page Count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 
 # Composition: Library class
